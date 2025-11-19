@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Online Learning Modules</title>
+<style>
+body {
+    margin: 0;
+    background-color: #0a0a0a;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px #fff659;
+  }
+
+  .modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .module-card {
+    background-color: #111;
+    border: 1px solid #b7a900;
+    border-radius: 12px;
+    padding: 25px 20px;
+    width: 240px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    overflow: scroll;
+  }
+
+  .module-card:hover {
+    transform: scale(1.05);
+    border-color: #fff659;
+    box-shadow: 0 0 15px #fff659;
+    width: 1500px;
+  }
+
+  .module-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .module-description {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  .module-button {
+    align-self: flex-start;
+    background-color: transparent;
+    border: 1px solid #b7a900;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+
+  .module-button:hover {
+    background-color: #b7a900;
+    color: #000;
+  }
+
+  /* Optional floating light yellow shapes */
+  .background-glow {
+    position: fixed;
+    border-radius: 50%;
+    background: rgba(183, 169, 0, 0.25);
+    filter: blur(60px);
+    z-index: 0;
+  }
+
+  .glow1 {
+    width: 150px;
+    height: 250px;
+    top: 120px;
+    left: 60px;
+  }
+
+  .glow2 {
+    width: 180px;
+    height: 300px;
+    top: 400px;
+    left: 250px;
+  }
+
+  .glow3 {
+    width: 150px;
+    height: 220px;
+    top: 350px;
+    right: 100px;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  img:hover{
+    width: 500px;
+    height: 300px;
+  }
+    </style>
+    </head>
+    <body>
+         <div class="background-glow glow1"></div>
+  <div class="background-glow glow2"></div>
+  <div class="background-glow glow3"></div>
+
+  <div class="container">
+    <h1>Online Learning Modules</h1>
+    <div class="modules">
+      <div class="module-card">
+        <div class="module-title">Module 1</div>
+        <div class="module-description">Operators</div>
+        <pre>
+      <pre>
+        MODULE 3
+BASIC OPERATORS
+
+Operators
+Perform data manipulations on one or more input variables (called operands). For example, in the
+expression 2+3, the operands are 2 and 3, and the operator is +. In terms of the number of operands, a
+distinction can be made among unary operators (one operand), binary operators (two operands), and ternary
+operators (three operands). In terms of the operations performed, a distinction can be made among the
+following:
+
+❖ Arithmetic operators
+❖ Relational operators
+❖ Logical operators
+❖ Assignment operators
+
+Arithmetic Operators
+Arithmetic operators perform basic mathematical operations on numerical values. The most popular ones are
+listed in Table 3.1.
+
+Table 3.1: Arithmetic Operators
+
+<img src="Images/module3example1.jpg" alt="example">
+
+Relational Operators
+Relational operators are usually binary operators. They check the relationship between two operands that are
+usually numbers or at least can be represented as numbers. They typically return a Boolean value. Consider the
+following variables:
+
+➢ int a=4;
+➢ int b=9;
+➢ int c=4;
+
+Table 3.2 illustrates the relational operators that can be used in Java.11
+
+<img src="Images/module3example2.jpg" alt="example">
+
+Logical operators
+A logical operator returns a Boolean result based on the Boolean result of one or more expressions. For this
+reason, they may also be called Boolean operators. Logical or Boolean operators are always evaluated from
+left to right. Consider, for example, the following expressions and their Boolean results. Table 3.3 then illustrates
+the evaluation of the logical operators that can be used in Java on these expressions.
+
+➢ A: 3 > 2 (True)
+➢ B: 2 < 1 (False)
+
+<img src="Images/module3example3.jpg" alt="example">
+
+Assignment Operators
+The assignment operator assigns values to a variable. In previous examples, you read about the (=) operator,
+which assigns a value to a variable. Table 3.4 lists some important assignment operators.
+
+Table 3.2 Assignment Operator
+
+<img src="Images/module3example4.jpg" alt="example">
+
+      </pre>
+    </div>
+    </body>
+</html>

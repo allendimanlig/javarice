@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Online Learning Modules</title>
+<style>
+body {
+    margin: 0;
+    background-color: #0a0a0a;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px #fff659;
+  }
+
+  .modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .module-card {
+    background-color: #111;
+    border: 1px solid #b7a900;
+    border-radius: 12px;
+    padding: 25px 20px;
+    width: 240px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    overflow: scroll;
+  }
+
+  .module-card:hover {
+    transform: scale(1.05);
+    border-color: #fff659;
+    box-shadow: 0 0 15px #fff659;
+    width: 1500px;
+  }
+
+  .module-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .module-description {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  .module-button {
+    align-self: flex-start;
+    background-color: transparent;
+    border: 1px solid #b7a900;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+
+  .module-button:hover {
+    background-color: #b7a900;
+    color: #000;
+  }
+
+  /* Optional floating light yellow shapes */
+  .background-glow {
+    position: fixed;
+    border-radius: 50%;
+    background: rgba(183, 169, 0, 0.25);
+    filter: blur(60px);
+    z-index: 0;
+  }
+
+  .glow1 {
+    width: 150px;
+    height: 250px;
+    top: 120px;
+    left: 60px;
+  }
+
+  .glow2 {
+    width: 180px;
+    height: 300px;
+    top: 400px;
+    left: 250px;
+  }
+
+  .glow3 {
+    width: 150px;
+    height: 220px;
+    top: 350px;
+    right: 100px;
+  }
+  
+   img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+   }
+   img:hover{
+    width: 300px;
+    height: 100px;
+   }
+    </style>
+    </head>
+    <body>
+         <div class="background-glow glow1"></div>
+  <div class="background-glow glow2"></div>
+  <div class="background-glow glow3"></div>
+
+  <div class="container">
+    <h1>Java Rice</h1>
+    <div class="modules">
+      <div class="module-card">
+        <div class="module-title">Module 1</div>
+        <div class="module-description">Basic Element of JAVA</div>
+        <pre>
+      MODULE 1
+
+
+A computer program, or a program, is a sequence of statements
+intended to accomplish a task.
+
+Programming is a process of planning and creating a program.
+
+People who write programs - that is, programmers - find this
+second view to be more useful when they design a program.
+
+<img src="Images/module1example1.jpg" alt="example">
+
+Figure 1 - Running Program 
+
+
+
+PROGRAMMING LANGUAGES, COMPILERS, AND INTERPRETERS   
+
+High-Level Language
+
+Most modern programming languages are designed to be relatively
+easy for people to understand and use. Such language are called high-level language.
+Java is a high-level language
+
+C++, C#, COBOL, Python, and Ruby are also high-level languages.
+
+Compiler - A program that translates a program written in a
+high-level language into the equivalent machine language.
+(In the case of Java, this machine language is a bytecode)
+
+Interpreters - translate and execute portions of code at a time.
+
+Low-Level Language
+
+Machine Language - The language that the computer can directly understand.
+
+Assembly Language - is a symbolic form of machine language that is easier for people to read.
+
+Assembler - A program that translates a program written in assembly
+language into an equivalent program in machine languages are called a low-level languages. 
+
+<img src="Images/module1example2.jpg" alt="example">
+
+PROCESSING A JAVA PROGRAM
+
+Java has two types of programs - applications and applets.
+
+An application is just a regular program.
+
+An applet sounds though it would be a little apple,
+but the name meant to convey the idea of a little application. 
+
+PROGRAMMING WITH THE PROBLEM ANALYSIS - CODING - EXECUTION CYCLE
+
+Algorithm
+
+- A step-by-step problem-solving process in which a solution
+is arrived at in a finite amount of time.	
+
+- An algorithm is a set of directions for solving a problem.
+
+Example 1.1
+
+In this example, we design an algorithm to find the perimeter
+and area of a rectangle. To find the perimeter and area of a rectangle,
+you need to know the rectangle’s length and width. The perimeter and 
+area of a rectangle are then given by the following formulas.
+
+perimeter = 2 * (length + width)
+
+area = length * width
+
+
+      The algorithm to find the perimeter and area of the rectangle is:
+
+Start
+
+Get the length of the rectangle.
+
+Get the width of the rectangle.
+
+Find the perimeter using the following equation: perimeter = 2 * (length + width)
+
+Find the area using the following equation: area = length * width
+
+Stop
+
+Two methods of representing an algorithm.
+
+Pseudocode
+
+✔ is a mixture of English and Java.
+
+✔ is an artificial and informal language that helps programmers to develop algorithms.
+Pseudocode is a “text-based”, detail (algorithmic) design tool.
+
+
+Example 2
+
+To check positive or negative number 
+
+	BEGIN
+
+	READ num
+
+	IF (num>0) THEN
+
+	DISPLAY num is positive
+
+	ELSE
+
+	DISPLAY num is negative
+
+	END IF
+
+	END
+
+
+Flowchart - is a pictorial representation of an algorithm.
+
+         Key Flowchart Modeling Concepts
+
+<img src="Images/module1example3.jpg" alt="example">
+
+PROGRAMMING METHODOLOGIES
+
+The approach to analyzing such complex problems, planning for software development
+and controlling the development process. 
+
+Types of Programming Methodologies
+
+Procedural Programming 
+
+The Problem is broken down into procedures, or blocks of code
+that perform one task each. All procedures are taken together
+to form the whole program. It is suitable only for small programs
+that have a low level of complexity.
+
+Example - For a calculator program that does addition, subtraction, multiplication,
+division, square root, and comparison, each of these operations can be developed
+as separate procedures. In the main program, each procedure would be invoked on the basis
+of the user’s choice.
+
+
+Object-oriented Programming 
+
+Here, the solution revolves around entities or objects that are part of the problem.
+The solution deals with how to store data related to the entities, how the entities behave,
+and how they interact with each other to give a cohesive solution.
+
+Example - If we have to develop a payroll management system,
+we will have entities like employees, salary structure, leave rules,
+etc. around which the solution must be built.
+    
+<img src="Images/module1example4.jpg" alt="example">
+      </pre>
+    </div>
+    </body>
+    </html>
